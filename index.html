@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Creador de Dibujos</title>
+</head>
+
+
+
+
+<body>
+  <section>
+    <div class="container">
+      <h1>Drawing App</h1>
+      <label for="stroke"> Stroke</label>
+      <input id="stroke" name='stroke' type="color">
+      <label for="lineWidth">Line Width</label>
+      <input id="lineWidth" name='lineWidth' type="number" value="5">
+      <button id="clear">Clear</button>
+
+    </div>
+
+
+    <div>
+      <canvas id="drawingCanvas" width="500" height="500"></canvas>
+    </div>
+
+  </section>
+  <script src="js/canvas.js"></script>
+</body>
+
+</html>

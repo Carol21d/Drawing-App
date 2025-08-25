@@ -1,6 +1,7 @@
 // Se obtiene el elemento <canvas> del DOM utilizando getElementById, y se obtiene su contexto de representación bidimensional ('2d') mediante getContext. El contexto es necesario para realizar operaciones de dibujo en el lienzo.
 const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
+const tool = document.getElementById('container-tools')
 
 
 

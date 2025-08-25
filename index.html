@@ -2,34 +2,34 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Creador de Dibujos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Finger+Paint&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creador de Dibujos</title>
 </head>
 
 
 
 
 <body>
-  <section>
-    <div class="container">
-      <h1>Drawing App</h1>
-      <label for="stroke"> Stroke</label>
-      <input id="stroke" name='stroke' type="color">
-      <label for="lineWidth">Line Width</label>
-      <input id="lineWidth" name='lineWidth' type="number" value="5">
-      <button id="clear">Clear</button>
-
-    </div>
-
-
-    <div>
-      <canvas id="drawingCanvas" width="500" height="500"></canvas>
-    </div>
-
-  </section>
-  <script src="js/canvas.js"></script>
+    <section class="container">
+        <div class="container-tools">
+            <h1>Drawing App</h1>
+            <label for="stroke"> Stroke</label>
+            <input id="stroke" name='stroke' type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name='lineWidth' type="number" value="5">
+            <button id="clear">Clear</button>
+        </div>
+        <div>
+            <canvas id="drawingCanvas" width="500" height="500"></canvas>
+        </div>
+    </section>
+    <script src="js/canvas.js"></script>
 </body>
 
 </html>

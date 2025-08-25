@@ -1,16 +1,11 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
-    color: white;
+    color: black;
 
 
 }
@@ -26,54 +21,79 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 
 .container {
-    height: 100%;
+ 
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(16, 16, 16, 0.567);
+    
 }
 
+
+
+
+
+canvas {
+    background-color: #f4f0eb;
+    background-size: cover;
+    border: 1px solid #919396;
+    box-shadow: 0 10px 20px rgba(16, 16, 16, 0.567);
+}
 
 #toolbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px 0;
     width: 100%;
-    background-color: #202020;
+    background: linear-gradient(125deg, #67a5f5, #f3bbe0, #64a0e4, #d364e4);
 }
 
 #toolbar * {
-    margin-bottom: 6px;
+    margin-bottom: 0 5px;
 }
 
 #toolbar label {
     font-size: 12px;
-
     font-family: "Finger Paint", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
+    color: #fff;
+
 }
 
 #toolbar input {
-    width: 50%;
+    width: auto;
 }
 
 #toolbar button {
-    background-color: #67C090;
+    background-color: #4be2ed;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     color: white;
-    padding: 2rem;
-    width: 40%;
+    padding: 10px 20px;
     font-size: 22px;
     font-family: "Finger Paint", sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+  
+}
+
+#toolbar button:hover{
+    background-color: #124170;
 }
 
 
-canvas {
+/* canvas {
     border: 2px solid #000;
-}
+} */

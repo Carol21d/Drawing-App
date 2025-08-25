@@ -34,7 +34,7 @@ h1 {
 }
 
 
-.container-tools {
+#toolbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,11 +44,11 @@ h1 {
     background-color: #202020;
 }
 
-.container-tools * {
+#toolbar * {
     margin-bottom: 6px;
 }
 
-.container-tools label {
+#toolbar label {
     font-size: 12px;
 
     font-family: "Finger Paint", sans-serif;
@@ -56,11 +56,11 @@ h1 {
     font-style: normal;
 }
 
-.container-tools input {
+#toolbar input {
     width: 50%;
 }
 
-.container-tools button {
+#toolbar button {
     background-color: #67C090;
     border: none;
     border-radius: 4px;

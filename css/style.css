@@ -30,9 +30,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
-    display: flex;
-    top: 0;
-    position: absolute;
+  
 }
 
 .container {
@@ -44,7 +42,7 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 10px 20px rgba(3, 3, 3, 0.567);
-    
+    background-image: linear-gradient( 105.9deg,  rgba(0,122,184,1) 24.4%, rgba(46,0,184,0.88) 80.5% );
 }
 
 
@@ -56,6 +54,9 @@ canvas {
     background-size: cover;
     border: 1px solid #919396;
     box-shadow: 0 10px 20px rgba(16, 16, 16, 0.567);
+    width: 1000px;
+    min-height: 700px;
+    display: block;
 }
 
 #toolbar {
@@ -65,7 +66,7 @@ canvas {
     align-items: center;
     padding: 10px 0;
     width: 100%;
-    background: linear-gradient(125deg, #67a5f5, #f3bbe0, #64a0e4, #d364e4);
+/* background-image: linear-gradient( 105.9deg,  rgba(0,122,184,1) 24.4%, rgba(46,0,184,0.88) 80.5% ); */
 }
 
 #toolbar * {
@@ -85,13 +86,18 @@ canvas {
 
 #toolbar input {
     width: 150px;
-    border: 1px solid black;
+    border:none;
     
 }
 
+#lineWidth{
+    height: 28px;
+    padding: 0.8rem;
+}
+
 #toolbar button {
-    background-color: #4be2ed;
-    border: none;
+    background-color: #4e4bed;
+    border: 1px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px 20px;
@@ -105,10 +111,8 @@ canvas {
 }
 
 #toolbar button:hover{
-    background-color: #124170;
+    background-color:white;
+    color:#4e4bed;
 }
 
 
-/* canvas {
-    border: 2px solid #000;
-} */

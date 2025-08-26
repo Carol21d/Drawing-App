@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Finger+Paint&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Creador de Dibujos</title>
+    <title>Drawing App</title>
 </head>
 
 
@@ -19,12 +19,14 @@
     <h1>Drawing App</h1>
     <section class="container">
         <div id="toolbar">
-            <label for="stroke"> Stroke</label>
+            <label for="stroke">COLOR</label>
             <input id="stroke" name='stroke' type="color">
-            <label for="lineWidth">Line Width</label>
+            <label for="lineWidth">GROSOR</label>
             <input id="lineWidth" name='lineWidth' type="number" value="5">
-            <button id="clear">Clear</button>
-            <button type="button" class="save-img">Save Image</button>
+            <button id="pencilBtn" class="active">PINCEL</button>
+            <button id="clear">BORRAR TODO</button>
+            <button id="eraseBtn">BORRAR</button>
+            <button type="button" class="save-img">GUARDAR IMAGEN</button>
         </div>
         <div>
             <canvas id="drawingCanvas" width="800" height="400"></canvas>

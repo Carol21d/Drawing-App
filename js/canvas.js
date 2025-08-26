@@ -1,8 +1,8 @@
 // Se obtiene el elemento <canvas> del DOM utilizando getElementById, y se obtiene su contexto de representación bidimensional ('2d') mediante getContext. El contexto es necesario para realizar operaciones de dibujo en el lienzo.
 const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
-const toolbar = document.getElementById('toolbar')
-
+const toolbar = document.getElementById('toolbar');
+const saveImg = document.querySelector(".save-img");
 
 
 const canvasOffsetX = canvas.offsetLeft;
@@ -73,6 +73,14 @@ canvas.addEventListener('mouseup' , e =>{
 
 canvas.addEventListener('mousemove', draw);
 
+
+// guardar imagen 
+saveImg.addEventListener("click", () =>{
+    const link = document.createElement("a"); // creamos el elemento
+    link.download = `${Date.now()}.jpg`; 
+    link.href = canvas.toDataURL();
+    link.click();
+})
 
 // ajusta el tamaño del canvas
 function resizeCanvas(){
